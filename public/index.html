@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chat Tpf asamblea 2</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div id="login-container">
+      <input type="text" id="username-input" placeholder="Ingresa tu nombre">
+      <button id="join-button">Unirse al Chat</button>
+    </div>
+    <div id="chat-container" style="display: none;">
+      <div id="user-list">
+        <h3>Usuarios Conectados</h3>
+        <ul id="users"></ul>
+      </div>
+      <div id="chat-area">
+        <div id="messages"></div>
+        <div id="input-area">
+          <input type="text" id="message-input" placeholder="Escribe tu mensaje">
+          <button id="send-button">Enviar</button>
+          <input type="file" id="file-input" style="display: none;">
+          <button id="attach-button">Adjuntar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
